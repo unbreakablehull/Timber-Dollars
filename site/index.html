@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timber Dollar Holdings — Strategic Investment Solutions</title>
+  <meta name="description" content="Timber Dollar Holdings — Strategic investment and portfolio management for long-term growth." />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__logo fade-down">
+          <a href="/" aria-label="Timber Dollar Holdings — home">
+            <span class="logo logo--lg">
+              <span>This Family</span>
+              <span>Supported By</span>
+              <span>Timber Dollars</span>
+            </span>
+            <span class="logo logo--sm">
+              <span>This Family</span>
+              <span>Supported By</span>
+              <span>Timber Dollars</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title fade-up fade-up--delay-1">
+            Timber Dollar
+            <span class="hero__subtitle">Holdings</span>
+          </h1>
+          <p class="hero__tagline fade-up fade-up--delay-2">Strategic. Trusted. Effective.</p>
+          <a href="/contact.html" class="btn-primary fade-up fade-up--delay-3">
+            Get In Touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-indicator__dot"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <p class="footer__copyright">© <span id="year"></span> Timber Dollar Holdings LLC</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

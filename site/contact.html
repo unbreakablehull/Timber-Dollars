@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Timber Dollar Holdings</title>
+  <meta name="description" content="Get in touch with Timber Dollar Holdings." />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <section class="contact">
+      <div class="contact__card fade-up">
+        <div class="contact__header">
+          <div class="contact__logo-wrap">
+            <span class="logo logo--sm">
+              <span>This Family</span>
+              <span>Supported By</span>
+              <span>Timber Dollars</span>
+            </span>
+          </div>
+          <h1 class="contact__title">Get In Touch</h1>
+        </div>
+
+        <div id="alert-error" class="alert alert--error alert--hidden" role="alert">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8"  x2="12"   y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span data-alert-text></span>
+        </div>
+
+        <div id="alert-success" class="alert alert--success alert--hidden" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.99"/>
+          </svg>
+          <span data-alert-text></span>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="field field--icon">
+            <input type="text" name="name" placeholder="Your Name" required autocomplete="name" />
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+
+          <div class="field field--icon">
+            <input type="email" name="email" placeholder="Email Address" required autocomplete="email" />
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+
+          <div class="field">
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span id="submit-label">Send Message</span>
+            <svg id="submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+              <path d="m21.854 2.147-10.94 10.939"/>
+            </svg>
+          </button>
+        </form>
+
+        <a href="/" class="contact__back">← Back</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <p class="footer__copyright">© <span id="year"></span> Timber Dollar Holdings LLC</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
