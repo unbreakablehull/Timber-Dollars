@@ -92,15 +92,20 @@ img { display: block; max-width: 100%; }
 .hero__logo {
   position: absolute;
   top: 1.5rem;
-  right: 0;
+  left: 0;
 }
-@media (min-width: 768px) { .hero__logo { top: 2.5rem; } }
-
-.hero__logo .logo--mobile { display: inline-block; }
-.hero__logo .logo--desktop { display: none; }
+.hero__logo .logo {
+  border-width: 3px;
+  padding: 6px 10px;
+  font-size: 10px;
+}
 @media (min-width: 768px) {
-  .hero__logo .logo--mobile { display: none; }
-  .hero__logo .logo--desktop { display: inline-block; }
+  .hero__logo { top: 2.5rem; }
+  .hero__logo .logo {
+    border-width: 5px;
+    padding: 12px 18px;
+    font-size: 18px;
+  }
 }
 
 .hero__content {
